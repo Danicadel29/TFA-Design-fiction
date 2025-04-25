@@ -1,0 +1,28 @@
+
+// import des fichiers utilitaires (variables, mixins, functions…)
+@import "utils/mixins";
+@import "utils/functions";
+@import "utils/variables";
+
+// import des mises en page (grilles, sections…)
+@import "layout/global";
+@import "layout/navigation";
+@import "layout/grids";
+
+// import des styles de base
+@import "components/typography";
+
+/* 
+
+.custom-cursor{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background: url('../assets/images/cursor-click-here.svg');
+    background-size: cover;
+    border-radius: 50%;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 1;
+}
+ */
