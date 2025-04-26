@@ -109,6 +109,32 @@ header{} */
     
 }
 
+.Immersion{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: $color-texte;
+    background: linear-gradient(
+        to right,
+        $color-quaternary 0%,
+        $color-black 100%
+    );
+    
+}
+
+.Immersion .header{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: $color-texte;
+    background: linear-gradient(
+        to bottom,
+        $color-quaternary 0%,
+        $color-black 100%
+    );
+    
+}
+
 /* footer {}
 
 section {}
