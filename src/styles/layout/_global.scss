@@ -17,8 +17,18 @@ header{} */
 .body{
     margin: 0;
     padding: 0;
-    background-color: $color-black;
+    min-height: 100vh;
     color: $color-texte;
+    background: linear-gradient(
+        to top,
+        $color-black 6%,
+        $color-quaternary 12%,
+        $color-tertiary 26%,
+        $color-secondary 44%,
+        $color-primary 58%,
+        $color-black 67%
+    );
+    
 }
 
 /* footer {}
