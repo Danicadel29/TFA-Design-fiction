@@ -12,13 +12,17 @@ main {
 header, 
 footer {}
 
-header{}
+header{} */
 
-body{}
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: $color-black;
+    color: $color-texte;
+}
 
-footer {}
+/* footer {}
 
 section {}
 
-select, input, button,{}
- */
+select, input, button,{} */
