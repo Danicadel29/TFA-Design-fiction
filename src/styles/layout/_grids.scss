@@ -33,7 +33,10 @@
 }
 }
 
-.Mars .grid{
+.Mars .grid,
+.Lune .grid,
+.Orbite .grid,
+.Immersion .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 30px;
