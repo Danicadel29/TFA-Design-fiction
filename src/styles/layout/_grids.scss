@@ -1,2 +1,60 @@
 // grid 
-//mettre en place les grids pour le site
+
+.grid {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+}
+
+/* grid Home */
+
+.Home .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+@include responsive(tablet) {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 60px;
+        padding-right: 60px;
+}
+
+@include responsive(desktop) {
+        grid-template-columns: 
+        500px 80px
+        340px 60px
+        340px
+        ;
+        padding-left: 60px;
+        padding-right: 60px;
+}
+}
+
+.Mars .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+@include responsive(tablet) {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 60px;
+        padding-right: 60px;
+}
+
+@include responsive(desktop) {
+        grid-template-columns: 
+        233px 60px
+        233px 60px
+        233px 237px
+        102px 60px
+        102px
+        ;
+        padding-left: 60px;
+        padding-right: 60px;
+}
+}
