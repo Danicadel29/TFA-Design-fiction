@@ -49,13 +49,13 @@
 .Orbite .grid,
 .Immersion .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-left: 30px;
     padding-right: 30px;
 
 
 @include responsive(tablet) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         padding-left: 60px;
         padding-right: 60px;
 }
@@ -70,5 +70,21 @@
         ;
         padding-left: 60px;
         padding-right: 60px;
+
+.col-1-6{
+        grid-column: 1 / 6;
 }
+
+.col-1-8{
+        grid-column: 1 / 8;
 }
+
+.col-1-4{
+        grid-column: 1 / 4;
+        
+}
+
+.col-5-10{
+        grid-column: 5 / 10;
+}
+}}

@@ -1,19 +1,5 @@
 /* global style */
 
-//mettre en place un style de base pour le site
-// reset de la margin et padding de tout les elements
-
-/* 
-main {
-    display: grid;
-    margin: 0;
-}
-
-header, 
-footer {}
-
-header{} */
-
 .Home{
     margin: 0;
     padding: 0;
@@ -135,8 +121,13 @@ header{} */
     
 }
 
-/* footer {}
-
-section {}
-
-select, input, button,{} */
+.header__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
