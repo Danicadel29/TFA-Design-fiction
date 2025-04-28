@@ -24,7 +24,6 @@
     height: 10vh;
      margin: 0;
      display: flex;
-     justify-content: center;
     
 }
 
@@ -89,12 +88,7 @@
     
 }
 
-.Info__liste{
-    width: 50vw;
-    height: 10vh;
-     margin: 0;
-     justify-content: center;
-}
+
 
 .element__Info{
     display: flex;
@@ -102,15 +96,6 @@
     text-decoration: none;
     color: $color-texte;
     margin-right: 2%;
-
-    
-    @include responsive(tablet) {
-        margin-right: 4%;
-    }
-    
-    @include responsive(desktop) {
-        margin-right: 8%;
-    }
 }
 
 .element__Info a{
@@ -119,4 +104,9 @@
     color: $color-texte;
     text-decoration: none;
     list-style: none;
+    @include font-size-responsive(11px, 20px, 30px);
+}
+
+.Footer {
+    padding: 40px;
 }
