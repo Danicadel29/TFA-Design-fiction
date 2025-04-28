@@ -18,3 +18,105 @@
     width: 0;
     transition: width 0.1s ease-out;
 } */
+
+.Nav__liste{
+    width: 50vw;
+    height: 10vh;
+     margin: 0;
+     display: flex;
+     justify-content: center;
+    
+}
+
+
+.element__Nav1,
+.element__Nav2,
+.element__Nav3,
+.element__Nav4,
+.element__Nav5{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-texte;
+    margin-right: 2%;
+
+    
+    @include responsive(tablet) {
+        margin-right: 4%;
+    }
+    
+    @include responsive(desktop) {
+        margin-right: 8%;
+    }
+}
+
+
+.element__Nav1 a,
+.element__Nav2 a,
+.element__Nav3 a,
+.element__Nav4 a,
+.element__Nav5 a{
+    font-family: $font-primary;
+    font-weight: 700;
+    color: $color-texte;
+    text-decoration: none;
+    list-style: none;
+}
+
+.element__Nav1 a:hover{
+    border: white 1px solid;
+    border-radius: 10%;
+    padding: 5px 5px;
+    
+}
+
+.element__Nav2 a:hover{
+    color: $color-primary;
+    
+}
+
+.element__Nav3 a:hover{
+    color: $color-secondary;
+    
+}
+
+.element__Nav4 a:hover{
+    color: $color-tertiary;
+    
+}
+.element__Nav5 a:hover{
+    color: $color-quaternary;
+    
+}
+
+.Info__liste{
+    width: 50vw;
+    height: 10vh;
+     margin: 0;
+     justify-content: center;
+}
+
+.element__Info{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-texte;
+    margin-right: 2%;
+
+    
+    @include responsive(tablet) {
+        margin-right: 4%;
+    }
+    
+    @include responsive(desktop) {
+        margin-right: 8%;
+    }
+}
+
+.element__Info a{
+    font-family: $font-primary;
+    font-weight: 700;
+    color: $color-texte;
+    text-decoration: none;
+    list-style: none;
+}
