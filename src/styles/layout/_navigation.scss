@@ -20,14 +20,15 @@
 } */
 
 .Nav__liste{
-    width: 50vw;
+    width: auto;
     height: 10vh;
      margin: 0;
      display: flex;
+     justify-content: center;
     
 }
 
-
+.element__Nav,
 .element__Nav1,
 .element__Nav2,
 .element__Nav3,
@@ -49,7 +50,7 @@
     }
 }
 
-
+.element__Nav a,
 .element__Nav1 a,
 .element__Nav2 a,
 .element__Nav3 a,
