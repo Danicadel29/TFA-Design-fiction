@@ -52,12 +52,51 @@
     border-style: solid;
 }
 
-.header__image_mars,
-.header__image_lune{
-    width: 100vw;
-    height: auto;
+.header__image_mars{
+    width: 140%;
+    position: absolute;
+    top: 10%;
+    rotate: 120deg;
+    z-index: 0;
 }
 
+.header__image_lune{
+    width: 140%;
+    position: absolute;
+    top: 7%;
+    rotate: -20deg;
+    z-index: 0;
+}
+
+.header__image_orbite{
+    width: 140%;
+    position: absolute;
+    top: 10%;
+    rotate: -20deg;
+    z-index: 0;
+}
+
+.header__image_immersion{
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    rotate: 160deg;
+    z-index: 0;
+}
+
+
+.header__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
 
 .image_activite{
     width: 35vw;

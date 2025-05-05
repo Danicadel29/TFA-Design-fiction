@@ -1,5 +1,9 @@
 /* global style */
 
+body{
+    overflow-x: hidden;
+}
+
 .Home{
     margin: 0;
     padding: 0;
@@ -121,13 +125,3 @@
     
 }
 
-.header__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
