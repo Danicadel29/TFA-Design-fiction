@@ -21,6 +21,27 @@
       margin: 0;
       z-index: 1;
 }
+
+.titre{
+      font-family: $font-secondary;
+      line-height: 1.2;
+      color: $color-texte;
+      font-weight: 700;
+      margin: 0;
+      z-index: 1;
+      display: block;
+      margin: 0 auto;
+
+      @include responsive(tablet) {
+            display: block;
+            margin: 0 auto;
+        }
+    
+        @include responsive(desktop) {
+            margin: 0;
+            text-align: left;
+    }
+}
 .grand-titre{
       margin: 10%;
 }

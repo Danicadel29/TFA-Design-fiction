@@ -43,13 +43,19 @@
     border-color: $color-secondary;
     border-width: 10px;
     border-style: solid;
+    display: block;
+    margin: 0 auto;
 
     @include responsive(tablet) {
         border-width: 15px;
+        display: block;
+        margin: 0 auto;
+        
     }
 
     @include responsive(desktop) {
         border-width: 20px;
+        
 }
 }
 
