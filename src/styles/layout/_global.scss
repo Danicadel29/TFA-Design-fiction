@@ -125,3 +125,15 @@ body{
     
 }
 
+header{
+   width: 100vw;
+    height: 40vh;
+
+    @include responsive(tablet) {
+        height: 50vh;
+    }
+    
+    @include responsive(desktop) {
+        height: 140vh;
+    }
+}

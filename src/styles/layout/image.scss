@@ -7,49 +7,50 @@
 }
 
 .header__image{
-    width: 30vw;
+    width: 40vw;
     height: auto;
+    position: relative;
+    left: 50%;
+    top: -70%;
+
+    
+    @include responsive(desktop) {
+        width: 50vw;
+        top: -20%;
+        left: 0;
+    }
 }
+
 
 .image_casque{
     width: 25vw;
     height: auto;
+    display: none;
+
+    @include responsive(tablet) {
+        display: none;
+    }
+
+    @include responsive(desktop) {
+        display: block;
+}
 }
 
-.image_mars_home{
+.image_home{
     width: 25vw;
     height: auto;
     border-radius: 100%;
     border-color: $color-secondary;
-    border-width: 20px;
+    border-width: 10px;
     border-style: solid;
-}
 
-.image_lune_home{
-    width: 25vw;
-    height: auto;
-    border-radius: 100%;
-    border-color: $color-secondary;
-    border-width: 20px;
-    border-style: solid;
-}
+    @include responsive(tablet) {
+        border-width: 15px;
+    }
 
-.image_orbite_home{
-    width: 25vw;
-    height: auto;
-    border-radius: 100%;
-    border-color: $color-secondary;
-    border-width: 20px;
-    border-style: solid;
+    @include responsive(desktop) {
+        border-width: 20px;
 }
-
-.image_immersion_home{
-    width: 25vw;
-    height: auto;
-    border-radius: 100%;
-    border-color: $color-secondary;
-    border-width: 20px;
-    border-style: solid;
 }
 
 .header__image_mars{
