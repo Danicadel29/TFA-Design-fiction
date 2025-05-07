@@ -47,7 +47,7 @@
     }
     
     @include responsive(desktop) {
-        margin-right: 8%;
+        margin-right: 6%;
     }
 }
 
@@ -90,7 +90,21 @@
     
 }
 
+.info{
+    width: 100%;
+    border-collapse: collapse;
+    border-left: 1px solid $color-texte;
+}
+.tableau__info{
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid $color-texte;
+    vertical-align: top;
 
+        &:last-child {
+            border-right: none;
+        }
+}
 
 .element__Info{
     display: flex;
