@@ -20,8 +20,6 @@
 } */
 
 .Nav__liste{
-    width: auto;
-    height: 10vh;
      margin: 0;
      display: flex;
      justify-content: center;
@@ -112,6 +110,7 @@
     text-decoration: none;
     color: $color-texte;
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .element__Info a{
