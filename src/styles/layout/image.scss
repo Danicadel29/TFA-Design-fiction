@@ -40,6 +40,16 @@
 }
 }
 
+.shema{
+    width: 100%;
+
+    @include responsive(desktop) {
+        grid-column: 1 / 8 !important;
+        
+}
+
+}
+
 .image_home{
     width: 25vw;
     height: auto;
