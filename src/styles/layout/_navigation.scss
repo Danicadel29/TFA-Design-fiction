@@ -41,7 +41,7 @@
 
     
     @include responsive(tablet) {
-        margin-right: 4%;
+        margin-right: 2%;
     }
     
     @include responsive(desktop) {
@@ -104,6 +104,10 @@
         }
 }
 
+.element_footer{
+    @include font-size-responsive(11px, 20px, 30px);
+
+}
 .element__Info{
     display: flex;
     align-items: center;
