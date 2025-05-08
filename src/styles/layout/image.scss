@@ -90,25 +90,43 @@
 }
 
 .header__image_immersion{
-    width: 70%;
+    width: 60%;
     position: absolute;
-    top: 15%;
+    top: 10%;
     rotate: 160deg;
     z-index: 0;
-}
+
+    @include responsive(tablet) {
+        width: 60%;
+        top: 10%;
+        
+    }
+
+    @include responsive(desktop) {
+        width: 70%;
+        top: 15%;
+   
+}}
 
 
  .header__container{
-    height: 100vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 0 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+
+    @include responsive(tablet) {
+        height: 50vh;
+        
+    }
+
+    @include responsive(desktop) {
+        height: 90vh;
+}
 }
 
 .image_activite{
