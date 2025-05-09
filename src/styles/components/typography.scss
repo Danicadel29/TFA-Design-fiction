@@ -3,7 +3,8 @@
 //mettre quelle police pour quel classe
 
 
-.texte{ @include font-size-responsive(16px, 20px, 30px); }
+.texte,
+.texte_nav{ @include font-size-responsive(16px, 20px, 30px); }
 
 .sous-titre{ @include font-size-responsive(19px, 24px, 43px); }
 
@@ -50,7 +51,17 @@
       font-family: $font-primary;
       line-height: 1.2;
       color: $color-texte;
-      font-weight: 700;
+      font-weight: 700; 
+      margin-bottom: 25px;
+      margin-top: 0;
+
+        @include responsive(tablet) {
+            margin-bottom: 32px;
+        }
+    
+        @include responsive(desktop) {
+            margin-bottom: 48px;
+    }
 }
 
 .mega-titre{
