@@ -164,3 +164,31 @@ header{
 
 }
 
+.section_description_voyage {
+    margin-bottom: 50px ;
+
+            @include responsive(tablet) {
+            margin-bottom: 64px;
+        
+    }
+
+    @include responsive(desktop) {
+        margin-bottom: 96px;
+        
+}
+}
+
+.Programme,
+.section_tableaux{
+        margin-bottom: 75px ;
+
+            @include responsive(tablet) {
+            margin-bottom: 96px;
+        
+    }
+
+    @include responsive(desktop) {
+        margin-bottom: 144px;
+        
+}
+}

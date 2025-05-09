@@ -43,9 +43,18 @@
 
 .shema{
     width: 100%;
+    margin-bottom: 75px;
+    
+
+     @include responsive(tablet) {
+        margin-bottom: 96px;
+        
+    }
 
     @include responsive(desktop) {
         grid-column: 1 / 8 !important;
+        margin-bottom: 144px;
+        
         
 }
 
