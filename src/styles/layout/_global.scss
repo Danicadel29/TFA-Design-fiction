@@ -127,3 +127,40 @@ header{
     height: auto;
 }
 
+.header_home{
+    width: 100vw;
+    height: auto;
+    margin-bottom: 125px;
+
+        @include responsive(tablet) {
+            margin-bottom: 160px;
+        
+    }
+
+    @include responsive(desktop) {
+        margin-bottom: 240px;
+        
+}
+}
+
+.presentation,
+.Mars__presentation,
+.Lune__presentation,
+.Orbite__presentation,
+.Immersion__presentation {
+        margin-bottom: 125px;
+        display: grid;
+        place-items: center;
+
+        @include responsive(tablet) {
+            margin-bottom: 160px;
+        
+    }
+
+    @include responsive(desktop) {
+        margin-bottom: 240px;
+        
+}
+
+}
+
