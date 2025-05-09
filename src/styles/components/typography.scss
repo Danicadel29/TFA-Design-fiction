@@ -32,15 +32,20 @@
       z-index: 1;
       display: block;
       margin: 0 auto;
-      place-items: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      
       @include responsive(tablet) {
             display: block;
             margin: 0 auto;
+            margin-top: 32px;
+            margin-bottom: 32px;
         }
     
         @include responsive(desktop) {
             margin: 0;
             text-align: left;
+            place-items: center;
     }
 }
 .grand-titre{
