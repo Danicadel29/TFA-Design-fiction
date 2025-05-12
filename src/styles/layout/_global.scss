@@ -3,7 +3,7 @@
 body{
     overflow-x: hidden;
     height:100%;
-  width: 100%;
+    width: 100%;
 }
 
 .Home{
@@ -198,10 +198,11 @@ header{
 .etoiles{
   width: 100%;
   height: 100%;
-  background-image: url("assets/images/texture_etoile.webp");
+  background-image: url("assets/image_webp/texture_etoile.webp");
   background-blend-mode: lighten;
   background-repeat: repeat-y;
   position: absolute;
   top: 0;
   left: 0;
+
 }
