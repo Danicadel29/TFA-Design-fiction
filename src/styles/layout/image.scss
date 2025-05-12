@@ -12,6 +12,7 @@
     width: 110%;
     height: auto;
     overflow: hidden;
+    mask-image: linear-gradient(to bottom, $color-black 70%, transparent 100%);
 
     @include responsive(tablet) {
         width: 120%;
@@ -152,6 +153,7 @@
 .image_activite{
     width: 35vw;
     height: auto;
+    border-radius: 20%;
 }
 
 .image_mars,
