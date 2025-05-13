@@ -162,7 +162,26 @@ header{
 }
 }
 
-.presentation,
+.presentation{
+    display: flex;
+    gap: 225px;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 125px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+        @include responsive(tablet) {
+            margin-bottom: 160px;
+        
+    }
+
+    @include responsive(desktop) {
+        margin-bottom: 240px;
+        
+}
+
+}
 .Mars__presentation,
 .Lune__presentation,
 .Orbite__presentation,
