@@ -243,3 +243,14 @@ header{
   left: 0;
 
 }
+
+.section-activites{
+    display: flex;
+    flex-direction: row;
+    gap: 225px;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 125px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
