@@ -254,3 +254,19 @@ header{
     margin-left: 60px;
     margin-right: 60px;
 }
+
+.cursor{
+    background-image: url("assets/image_webp/navette.cur");
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    border-radius: 50%;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.cursor-img{
+    cursor: pointer
+}
