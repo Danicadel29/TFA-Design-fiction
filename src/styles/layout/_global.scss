@@ -256,10 +256,10 @@ header{
 }
 
 .cursor{
-    background-image: url("../assets/image_webp/navette.svg");
+    background-image: url("../assets/image_webp/navette.webp");
     position: absolute;
-    width: 64px;
-    height: 64px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
     border-radius: 50%;
     pointer-events: none;
