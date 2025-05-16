@@ -12,7 +12,7 @@
 
 .grand-titre{ @include font-size-responsive(33px, 41px, 129px); }
 
-.mega-titre{ @include font-size-responsive(33px, 41px, 155px); }
+.mega-titre{ @include font-size-responsive(33px, 50px, 155px); }
 
 .sous-titre, .grand-titre{
       font-family: $font-secondary;

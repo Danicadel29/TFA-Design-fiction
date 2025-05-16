@@ -148,22 +148,26 @@ header{
 
 .header_home{
     display: flex;
-    gap: 0;
+    gap: 0px;
     justify-content: center;
     flex-direction: row;
-    width: 100vw;
     height: auto;
     margin-bottom: 125px;
     justify-content: center;
     margin-left: 30px;
+    margin-right: 30px;
 
         @include responsive(tablet) {
             margin-bottom: 160px;
+            margin-left: 60px;
+            margin-right: 60px;
         
     }
 
     @include responsive(desktop) {
         margin-bottom: 240px;
+        margin-left: 60px;
+        margin-right: 60px;
         
 }
 }
