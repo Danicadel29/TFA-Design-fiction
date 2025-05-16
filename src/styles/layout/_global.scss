@@ -142,15 +142,20 @@ body{
 }
 
 header{
-   width: 100vw;
+   width: 100%;
     height: auto;
 }
 
 .header_home{
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    flex-direction: row;
     width: 100vw;
     height: auto;
     margin-bottom: 125px;
     justify-content: center;
+    margin-left: 30px;
 
         @include responsive(tablet) {
             margin-bottom: 160px;
@@ -159,6 +164,21 @@ header{
 
     @include responsive(desktop) {
         margin-bottom: 240px;
+        
+}
+}
+
+.header_img{
+    max-width: 250px;
+
+     @include responsive(tablet) {
+        max-width: 350px;
+            
+        
+    }
+
+    @include responsive(desktop) {
+        max-width: 500px;
         
 }
 }
