@@ -20,3 +20,13 @@
 .cursor{
     cursor: url("../assets/image_webp/navette.webp"), auto;
 }
+
+.btn_acti1,
+.btn_acti2,
+.btn_acti3,
+.btn_acti4{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: $color-primary;
+}
