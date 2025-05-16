@@ -150,6 +150,7 @@ header{
     width: 100vw;
     height: auto;
     margin-bottom: 125px;
+    justify-content: center;
 
         @include responsive(tablet) {
             margin-bottom: 160px;
@@ -250,7 +251,6 @@ header{
     gap: 225px;
     justify-content: center;
     flex-direction: row;
-    margin-bottom: 125px;
     margin-left: 60px;
     margin-right: 60px;
 }
