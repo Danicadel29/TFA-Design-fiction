@@ -24,24 +24,52 @@
 .map {
     position: relative;
     width: 100%;
-    margin-left: 60px;
-    margin-right: 60px;
+    
+}
 
-    button {
+.button_M {
         width: 5vw;
         height: 5vw;
         border-radius: 100%;
         background-color: $color-primary;
         position: absolute;
     }
-}
+
+.button_L {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 100%;
+        background-color: $color-secondary;
+        position: absolute;
+    }
+
+.button_O {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 100%;
+        background-color: $color-tertiary;
+        position: absolute;
+    }
+
+.button_I {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 100%;
+        background-color: $color-quaternary;
+        position: absolute;
+    }
 
 .btn_acti1{
-    transform: translate3d(38vw, 3vw, 0);
+    transform: translate3d(34vw, 2vw, 0);
 }
 
 .btn_acti2{
-    transform: translate3d(-2vw, 14vw, 0);
+    transform: translate3d(-2vw, 13vw, 0);
 }
-.btn_acti3{}
-.btn_acti4{}
+.btn_acti3{
+    transform: translate3d(70vw, 13vw, 0);
+}
+
+.btn_acti4{
+    transform: translate3d(34vw, 24vw, 0);
+}

@@ -189,7 +189,7 @@ header{
 
 .presentation{
     display: flex;
-    gap: 225px;
+    gap: 0px;
     justify-content: center;
     flex-direction: row;
     margin-bottom: 125px;
@@ -198,11 +198,13 @@ header{
 
         @include responsive(tablet) {
             margin-bottom: 160px;
+            gap: 40px;
         
     }
 
     @include responsive(desktop) {
         margin-bottom: 240px;
+        gap: 225px;
         
 }
 
@@ -272,11 +274,24 @@ header{
 .section-activites{
     display: flex;
     flex-direction: row;
-    gap: 225px;
+    gap: 0px;
     justify-content: center;
-    flex-direction: row;
-    margin-left: 60px;
-    margin-right: 60px;
+    flex-direction: column;
+    
+
+            @include responsive(tablet) {
+            
+            gap: 60px;
+            flex-direction: row;
+        
+    }
+
+    @include responsive(desktop) {
+        
+        gap: 225px;
+        flex-direction: row;
+        
+}
 }
 
 .cursor{
@@ -296,6 +311,18 @@ header{
 }
 
 .programme{
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    @include responsive(tablet) {
+        margin-left: 60px;
+        margin-right: 60px;
+        
+    }
+
+    @include responsive(desktop) {
+        margin-left: 60px;
+        margin-right: 60px;
+        
+}
 }

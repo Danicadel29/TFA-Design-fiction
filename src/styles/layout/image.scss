@@ -15,14 +15,14 @@
     mask-image: linear-gradient(to bottom, $color-black 70%, transparent 100%);}
 
 
-.image_casque{
+.image_clee{
     width: 25vw;
     height: auto;
     display: none;
     align-self: center;
 
     @include responsive(tablet) {
-        display: none;
+        display: block;
     }
 
     @include responsive(desktop) {
@@ -139,9 +139,18 @@
 }
 
 .image_activite{
-    width: 40%;
+    width: 100%;
     height: auto;
     border-radius: 20%;
+
+    @include responsive(tablet) {
+        width: 50%;
+        
+    }
+
+    @include responsive(desktop) {
+        width: 40%;
+}
 }
 
 .image_mars,
