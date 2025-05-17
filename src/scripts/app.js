@@ -30,6 +30,8 @@ if (window.innerWidth >= 1280) {
     });
 });
 }
+
+
 //transition page
 /* var link = document.querySelector(".pageTransition")
 link.addEventListener("click", pageTransition);
@@ -46,14 +48,3 @@ function pageTransition(e){
     })
     e.preventDefault();
 } */
-
-
-const titre = "CELESTIA TRAVEL";
-const container = document.getElementById("space-titre");
-
-titre.split("").forEach((char, index) =>{
-    const span = document.createElement("span");
-    span.textContent = char;
-    span.classList.add("letter");
-    span.style.animationDelay = `${index * 0.1}s`;
-})
