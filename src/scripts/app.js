@@ -30,8 +30,6 @@ if (window.innerWidth >= 1280) {
     });
 });
 }
-
-
 //transition page
 /* var link = document.querySelector(".pageTransition")
 link.addEventListener("click", pageTransition);
@@ -48,3 +46,18 @@ function pageTransition(e){
     })
     e.preventDefault();
 } */
+
+    var link = document.querySelector(".pageTransition");
+var block = document.querySelector(".transition-slide");
+
+link.addEventListener("click", function(e) {
+    e.preventDefault();
+    var linkHref = this.href;
+
+    document.body.classList.add("pageAnim");
+
+    // Attendre la fin de l'animation (1s ici)
+    block.addEventListener("animationend", function() {
+        window.location = linkHref;
+    }, { once: true });
+});
