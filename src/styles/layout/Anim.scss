@@ -1,0 +1,35 @@
+#space-titre{
+    letter-spacing: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.letter{
+    opacity: 0;
+    animation: appear 0.5s forwards;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+        text-shadow: none;
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        text-shadow: 0 0 8px #0FF, 0 0 15px #0FF; 
+    }
+}
+
+@keyframes twinkle{
+    0%, 100%{
+        text-shadow: 0 0 10px #0FF;
+    }
+
+    50%{
+        text-shadow: 0 0 20px #FFF, 0 0 30px #0FF;
+    }
+}
+

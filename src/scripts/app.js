@@ -30,3 +30,30 @@ if (window.innerWidth >= 1280) {
     });
 });
 }
+//transition page
+/* var link = document.querySelector(".pageTransition")
+link.addEventListener("click", pageTransition);
+
+var block2 = document.querySelector(".block2");
+
+function pageTransition(e){
+
+    var linkHref = this.href;
+    
+    document.body.classList.add("pageAnim");
+    document.body.addEventListener("animationend", function(){
+        window.location = linkHref; //url de la page égal a 
+    })
+    e.preventDefault();
+} */
+
+
+const titre = "CELESTIA TRAVEL";
+const container = document.getElementById("space-titre");
+
+titre.split("").forEach((char, index) =>{
+    const span = document.createElement("span");
+    span.textContent = char;
+    span.classList.add("letter");
+    span.style.animationDelay = `${index * 0.1}s`;
+})
