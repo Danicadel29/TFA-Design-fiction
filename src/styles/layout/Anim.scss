@@ -12,6 +12,8 @@
   pointer-events: none;
   transform: translateX(0%);
 }
+
+//anim entree
 @keyframes slideOut{
   0% {
     transform: translateX(-100%);
@@ -26,6 +28,7 @@
   }
 }
 
+//anim sortie
 @keyframes slideIn{
   0% {
     transform: translateX(100%);
@@ -41,6 +44,7 @@
   }
 }
 
+//class utiliser dans java
 body.pageAnim .transition-slide {
   animation: slideOut 1s forwards;
 }
@@ -80,7 +84,7 @@ body.loaded .transition-slide {
     transform: scale(1) translateY(0);
   }
 }
-//temps des anim
+//parametre des anim mega titre
 .anim-titre{
    animation:
     titleAppear 4s ease-out forwards, //vite, doucement/ garde derner etat
@@ -90,7 +94,7 @@ body.loaded .transition-slide {
  
 }
 
-//anim titre description + titre voyage
+//parametre titre description + titre voyage
 .anim-titre-voyage,
 .anim-titre-description{
   animation:
