@@ -1,15 +1,15 @@
-//  Curseur personnalisé sur l'état hover des img--schema //
+//  Curseur personnalisé //
 const body = document.body;
 const Cursor = document.querySelector('.cursor');
 const images = document.querySelectorAll('.cursor-img');
 
+//deplacer le cursor et centre
 function moveCursor(e) {
     console.log('mousemove');
-  Cursor.style.top = `${(e.clientY + window.scrollY) - 32}px`; // 32 c'est la moitié de la taille du curseur, pour le centrer, si tu veux que le "click" soit en haut à gauche, comme pour la souris, alors retire le 32
+  Cursor.style.top = `${(e.clientY + window.scrollY) - 32}px`; 
   Cursor.style.left = `${e.clientX - 32}px`;
 }
-
-if (window.innerWidth >= 1280) {
+// cacher le cursor de base / afficher le cursor personnaliser/ activer le suivi
     images.forEach((img) => {
         img.addEventListener('mouseenter', () => {
             console.log('mouseenter');
@@ -18,7 +18,7 @@ if (window.innerWidth >= 1280) {
         img.addEventListener('mousemove', moveCursor);
         });
     });
-
+//inverse que on part de l'element avec le cursor
     images.forEach((img) => {
         img.addEventListener('mouseleave', (e) => {
             console.log('mouseleave');
@@ -29,45 +29,25 @@ if (window.innerWidth >= 1280) {
         }
     });
 });
-}
-//transition page
-/* var link = document.querySelector(".pageTransition")
-link.addEventListener("click", pageTransition);
 
-var block2 = document.querySelector(".block2");
 
-function pageTransition(e){
-
-    var linkHref = this.href;
-    
-    document.body.classList.add("pageAnim");
-    document.body.addEventListener("animationend", function(){
-        window.location = linkHref; //url de la page égal a 
-    })
-    e.preventDefault();
-} */
-
-/*     var link = document.querySelector(".pageTransition");
-    var block = document.querySelector(".transition-slide");
-
-link.addEventListener("click", function(e) {
-    e.preventDefault();
-    var linkHref = this.href;
-
-    document.body.classList.add("pageAnim");
-
-    // Attendre la fin de l'animation (1s ici)
-    block.addEventListener("animationend", function() {
-        window.location = linkHref;
-    }, { once: true });
-}); */
-
-// Animation d'entrée au chargement
+// transition de page
+//apres le chargement de la page ajout de l'anim d'entrer
 window.addEventListener("load", () => {
-  document.body.classList.add("loaded");
+  const referrer = document.referrer;
+  const sameSite = referrer.startsWith(window.location.origin);
+
+  if (sameSite) {
+    document.body.classList.add("loaded"); // on anime à l’arrivée
+  } else {
+    // sinon on désactive le voile pour ne rien voir du tout
+    const slide = document.querySelector(".transition-slide");
+    if (slide) slide.style.display = "none";
+  }
 });
 
-// Animation de sortie sur clic lien
+
+// enlever anim d'enter ajouter anim de sortie/ empeche l'ouvertir directe/ redirige seulement quand anim fini
 document.querySelectorAll(".pageTransition").forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
@@ -80,4 +60,19 @@ document.querySelectorAll(".pageTransition").forEach(link => {
       window.location = href;
     }, { once: true });
   });
+});
+
+// animation titre decription quand dans le champ
+
+document.querySelectorAll('.titre-description').forEach((element) => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('anim-titre-description');
+        observer.unobserve(entry.target); // une seule fois
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(element);
 });

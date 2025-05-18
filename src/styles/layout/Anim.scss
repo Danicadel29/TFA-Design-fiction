@@ -1,3 +1,5 @@
+
+// transition page
 .transition-slide {
   position: fixed;
   top: 0;
@@ -47,6 +49,7 @@ body.loaded .transition-slide {
   animation: slideIn 1s ease-out forwards;
 }
 
+//anim mega titre
 // faire flotter
 @keyframes titleFloat {
   0%, 100% {
@@ -87,13 +90,21 @@ body.loaded .transition-slide {
  
 }
 
-.anim-titre-voyage{
+//anim titre description + titre voyage
+.anim-titre-voyage,
+.anim-titre-description{
   animation:
-    titleAppear 2s ease-out forwards, //vite, doucement/ garde derner etat
+    titleAppear 2s ease-out forwards, //vite, doucement/ garde dernier etat
     
 
 }
+//etat de base titre description
+.titre-description {
+  opacity: 0;
+  transform: scale(0) translateY(20px);
+}
 
+//anim planets1
 @keyframes spinPlanet {
   0% {
     transform: rotate(0deg);
