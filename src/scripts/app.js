@@ -47,8 +47,8 @@ function pageTransition(e){
     e.preventDefault();
 } */
 
-    var link = document.querySelector(".pageTransition");
-var block = document.querySelector(".transition-slide");
+/*     var link = document.querySelector(".pageTransition");
+    var block = document.querySelector(".transition-slide");
 
 link.addEventListener("click", function(e) {
     e.preventDefault();
@@ -60,4 +60,24 @@ link.addEventListener("click", function(e) {
     block.addEventListener("animationend", function() {
         window.location = linkHref;
     }, { once: true });
+}); */
+
+// Animation d'entrée au chargement
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
+// Animation de sortie sur clic lien
+document.querySelectorAll(".pageTransition").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+    const href = this.href;
+
+    document.body.classList.remove("loaded");
+    document.body.classList.add("pageAnim");
+
+    document.querySelector(".transition-slide").addEventListener("animationend", () => {
+      window.location = href;
+    }, { once: true });
+  });
 });
