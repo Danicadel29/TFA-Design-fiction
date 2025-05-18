@@ -1,3 +1,5 @@
+const { default: gsap } = require("gsap");
+
 //  Curseur personnalisé //
 const body = document.body;
 const Cursor = document.querySelector('.cursor');
