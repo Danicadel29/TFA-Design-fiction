@@ -1,11 +1,11 @@
-const { default: gsap } = require("gsap");
+
 
 //  Curseur personnalisé //
 const body = document.body;
 const Cursor = document.querySelector('.cursor');
 const images = document.querySelectorAll('.cursor-img');
 
-//deplacer le cursor et centre
+//deplacer le cursor et centrer
 function moveCursor(e) {
     console.log('mousemove');
   Cursor.style.top = `${(e.clientY + window.scrollY) - 32}px`; 
