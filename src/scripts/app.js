@@ -78,3 +78,71 @@ document.querySelectorAll('.titre-description').forEach((element) => {
 
   observer.observe(element);
 });
+
+// anim activité shéma
+const acti1 = document.querySelectorAll(".act1")
+const btn = document.querySelector(".btn_acti1")
+const activity = document.querySelectorAll(".activity")
+
+  btn.addEventListener('click', () => {
+    console.log('click');
+
+    activity.forEach(el  => {
+      el.style.display = "none";
+  });
+     
+    
+    acti1.forEach(el  => {
+      el.style.display = "block";
+  })
+        });
+
+
+
+const acti2 = document.querySelectorAll(".act2")
+const btn2 = document.querySelector(".btn_acti2")
+
+  btn2.addEventListener('click', () => {
+    console.log('click');
+
+    activity.forEach(el  => {
+      el.style.display = "none";
+  });
+     
+    
+    acti2.forEach(el  => {
+      el.style.display = "block";
+  })
+        });
+
+const acti3 = document.querySelectorAll(".act3")
+const btn3 = document.querySelector(".btn_acti3")
+
+  btn3.addEventListener('click', () => {
+    console.log('click');
+
+    activity.forEach(el  => {
+      el.style.display = "none";
+  });
+     
+    
+    acti3.forEach(el  => {
+      el.style.display = "block";
+  })
+        });
+
+const acti4 = document.querySelectorAll(".act4")
+const btn4 = document.querySelector(".btn_acti4")
+
+  btn4.addEventListener('click', () => {
+    console.log('click');
+
+    activity.forEach(el  => {
+      el.style.display = "none";
+  });
+     
+    
+    acti4.forEach(el  => {
+      el.style.display = "block";
+  })
+        });
