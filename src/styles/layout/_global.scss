@@ -50,6 +50,7 @@ body{
         $color-black 100%
     );
      background-blend-mode: lighten;
+     mask-image: linear-gradient(to bottom, $color-primary 80%, transparent 100%);
 
     
 }
@@ -80,7 +81,7 @@ body{
         $color-black 100%
     );
      background-blend-mode: lighten;
-    
+     mask-image: linear-gradient(to bottom, $color-secondary 80%, transparent 100%);
 }
 
 .Orbite{
@@ -109,7 +110,7 @@ body{
         $color-black 100%
     );
     background-blend-mode: lighten;
-    
+    mask-image: linear-gradient(to bottom, $color-tertiary 80%, transparent 100%);
 }
 
 .Immersion{
@@ -138,7 +139,7 @@ body{
         $color-black 100%
     );
      background-blend-mode: lighten;
-    
+    mask-image: linear-gradient(to bottom, $color-quaternary 80%, transparent 100%);
 }
 
 header{
