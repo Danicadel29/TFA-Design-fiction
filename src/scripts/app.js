@@ -146,3 +146,36 @@ const btn4 = document.querySelector(".btn_acti4")
       el.style.display = "block";
   })
         });
+
+const acti5 = document.querySelectorAll(".act5")
+const btn5 = document.querySelector(".btn_acti5")
+
+  btn5.addEventListener('click', () => {
+    console.log('click');
+
+    activity.forEach(el  => {
+      el.style.display = "none";
+  });
+     
+    
+    acti5.forEach(el  => {
+      el.style.display = "block";
+  })
+        });
+
+
+const acti6 = document.querySelectorAll(".act6")
+const btn6 = document.querySelector(".btn_acti6")
+
+  btn6.addEventListener('click', () => {
+    console.log('click');
+
+    activity.forEach(el  => {
+      el.style.display = "none";
+  });
+     
+    
+    acti6.forEach(el  => {
+      el.style.display = "block";
+  })
+        });
