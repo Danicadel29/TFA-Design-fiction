@@ -1,3 +1,4 @@
+const { default: gsap } = require("gsap");
 
 
 //  Curseur personnalisé //
@@ -188,13 +189,3 @@ const btn6 = document.querySelector(".btn_acti6")
 
 // query all de tous tes boutons button_M  (4, 6, X) length > taille des el du tableaux
 // 0 > acti6.length
-
-
-/* const img = document.querySelectorAll(".header__image_mars")
-
-  body.addEventListener('scroll'), () => {
-    console.log('click');
-
-    activity.forEach(el  => {
-      el.style.display = "none";
-  })} */
