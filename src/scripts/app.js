@@ -150,6 +150,7 @@ const btn4 = document.querySelector(".btn_acti4")
 const acti5 = document.querySelectorAll(".act5")
 const btn5 = document.querySelector(".btn_acti5")
 
+if(btn5){
   btn5.addEventListener('click', () => {
     console.log('click');
 
@@ -163,10 +164,13 @@ const btn5 = document.querySelector(".btn_acti5")
   })
         });
 
+}
+  
 
 const acti6 = document.querySelectorAll(".act6")
 const btn6 = document.querySelector(".btn_acti6")
 
+  if(btn6){
   btn6.addEventListener('click', () => {
     console.log('click');
 
@@ -179,3 +183,18 @@ const btn6 = document.querySelector(".btn_acti6")
       el.style.display = "block";
   })
         });
+
+}
+
+// query all de tous tes boutons button_M  (4, 6, X) length > taille des el du tableaux
+// 0 > acti6.length
+
+
+/* const img = document.querySelectorAll(".header__image_mars")
+
+  body.addEventListener('scroll'), () => {
+    console.log('click');
+
+    activity.forEach(el  => {
+      el.style.display = "none";
+  })} */
