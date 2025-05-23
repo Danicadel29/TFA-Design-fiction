@@ -45,6 +45,7 @@
 }
 
 //class utiliser dans java
+// utiliation de l'ia
 body.pageAnim .transition-slide {
   animation: slideOut 1s forwards;
 }
@@ -52,6 +53,7 @@ body.pageAnim .transition-slide {
 body.loaded .transition-slide {
   animation: slideIn 1s ease-out forwards;
 }
+
 
 //anim mega titre
 // faire flotter
@@ -87,7 +89,7 @@ body.loaded .transition-slide {
 //parametre des anim mega titre
 .anim-titre{
    animation:
-    titleAppear 4s ease-out forwards, //vite, doucement/ garde derner etat
+    titleAppear 4s ease-out forwards, //vite, doucement/ garde dernier etat
     titleGlow 4s infinite ease-in-out,// lent par tout/ en boucle
     titleFloat 6s infinite ease-in-out;// lent par tout / en boucle
 
@@ -109,7 +111,7 @@ body.loaded .transition-slide {
 }
 
 //anim planets1
-@keyframes spinPlanet {
+@keyframes animPlanet1 {
   0% {
     transform: rotate(0deg);
   }

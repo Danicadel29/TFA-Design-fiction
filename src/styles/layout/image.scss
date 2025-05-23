@@ -81,7 +81,7 @@
     rotate: 120deg;
     z-index: 0;
 
-    animation: spinPlanet 30s linear infinite;
+    animation: animPlanet1 30s linear infinite;
 }
 
 .header__image_lune{
@@ -90,7 +90,7 @@
     top: 7%;
     rotate: -20deg;
     z-index: 0;
-    animation: spinPlanet 30s linear infinite;
+    animation: animPlanet1 30s linear infinite;
 }
 
 .header__image_orbite{
@@ -99,7 +99,7 @@
     top: 10%;
     rotate: -20deg;
     z-index: 0;
-    animation: spinPlanet 30s linear infinite;
+    animation: animPlanet1 30s linear infinite;
 }
 
 .header__image_immersion{
@@ -108,7 +108,7 @@
     top: 10%;
     rotate: 160deg;
     z-index: 0;
-    animation: spinPlanet 30s linear infinite;
+    animation: animPlanet1 30s linear infinite;
 
     @include responsive(tablet) {
         width: 60%;

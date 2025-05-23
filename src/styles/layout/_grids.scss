@@ -16,7 +16,7 @@
     padding-right: 30px;
 
     > *{
-        grid-column: 1 / -1;
+        grid-column: 1 / -1; // utiliation de l'ia
     }
 
 
@@ -39,7 +39,7 @@
         padding-right: 60px;
 
         > *{
-                grid-column: auto;
+                grid-column: auto; // utiliation de l'ia
             }
 
 .col-1-4{
