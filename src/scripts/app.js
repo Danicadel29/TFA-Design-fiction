@@ -34,7 +34,8 @@ function moveCursor(e) {
 });
 
 
-// transition de page
+// transition de page //utilisation de l'ia
+
 //apres le chargement de la page ajout de l'anim d'entrer
 window.addEventListener("load", () => {
   const referrer = document.referrer;
@@ -50,7 +51,7 @@ window.addEventListener("load", () => {
 });
 
 
-// enlever anim d'enter ajouter anim de sortie/ empeche l'ouvertir directe/ redirige seulement quand anim fini
+// enlever anim d'enter ajouter anim de sortie/ empeche l'ouverture direct/ redirige seulement quand anim fini
 document.querySelectorAll(".pageTransition").forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
@@ -65,7 +66,8 @@ document.querySelectorAll(".pageTransition").forEach(link => {
   });
 });
 
-// animation titre decription quand dans le champ
+
+// animation titre decription quand dans le champ //utilisation de l'ia
 
 document.querySelectorAll('.titre-description').forEach((element) => {
   const observer = new IntersectionObserver((entries) => {
@@ -79,6 +81,8 @@ document.querySelectorAll('.titre-description').forEach((element) => {
 
   observer.observe(element);
 });
+
+
 
 // anim activité shéma
 const acti1 = document.querySelectorAll(".act1")
