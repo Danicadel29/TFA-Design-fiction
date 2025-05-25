@@ -89,6 +89,7 @@ const acti1 = document.querySelectorAll(".act1")
 const btn = document.querySelector(".btn_acti1")
 const activity = document.querySelectorAll(".activity")
 
+  if(btn){
   btn.addEventListener('click', () => {
     console.log('click');
 
@@ -102,11 +103,14 @@ const activity = document.querySelectorAll(".activity")
   })
         });
 
+}
+
 
 
 const acti2 = document.querySelectorAll(".act2")
 const btn2 = document.querySelector(".btn_acti2")
 
+ if(btn2){
   btn2.addEventListener('click', () => {
     console.log('click');
 
@@ -120,9 +124,12 @@ const btn2 = document.querySelector(".btn_acti2")
   })
         });
 
+}
+
 const acti3 = document.querySelectorAll(".act3")
 const btn3 = document.querySelector(".btn_acti3")
 
+  if(btn3){
   btn3.addEventListener('click', () => {
     console.log('click');
 
@@ -136,9 +143,12 @@ const btn3 = document.querySelector(".btn_acti3")
   })
         });
 
+}
+
 const acti4 = document.querySelectorAll(".act4")
 const btn4 = document.querySelector(".btn_acti4")
 
+ if(btn4){
   btn4.addEventListener('click', () => {
     console.log('click');
 
@@ -151,6 +161,8 @@ const btn4 = document.querySelector(".btn_acti4")
       el.style.display = "block";
   })
         });
+
+}
 
 const acti5 = document.querySelectorAll(".act5")
 const btn5 = document.querySelector(".btn_acti5")
