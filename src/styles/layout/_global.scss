@@ -39,7 +39,7 @@ body{
 .Mars{
     margin: 0;
     padding: 0;
-    height: 60vh;
+     min-height: 60vh;
     color: $color-texte;
 
       background-image: 
@@ -92,7 +92,7 @@ body{
 .Lune{
     margin: 0;
     padding: 0;
-    height: 60vh;
+    min-height: 60vh;
     color: $color-texte;
     
      background-image: 
