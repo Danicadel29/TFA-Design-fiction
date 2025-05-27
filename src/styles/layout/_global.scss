@@ -147,15 +147,28 @@ body{
 .Orbite{
     margin: 0;
     padding: 0;
-    height: 60vh;
+    min-height: 60vh;
     color: $color-texte;
-    background: url("../assets/image_webp/texture_etoile.webp"),
-    linear-gradient(
+
+        background-image: 
+        linear-gradient(
         to right,
         $color-tertiary 0%,
         $color-black 100%
-    );
+        ),
+        url("../assets/image_webp/texture_etoile.webp");
+        
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+
     background-blend-mode: lighten;
+
+    image-rendering: auto;
+    
+    @media (max-width: 768px) {
+        background-attachment: scroll; 
+    }
     
 }
 
@@ -163,43 +176,77 @@ body{
     margin: 0;
     padding: 0;
     color: $color-texte;
-    background: url("../assets/image_webp/texture_etoile.webp"),
-    linear-gradient(
+
+     background-image: 
+        linear-gradient(
         to bottom,
         $color-tertiary 0%,
         $color-black 100%
-    );
+    ),
+         url("../assets/image_webp/texture_etoile.webp");
+        
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+
     background-blend-mode: lighten;
-    mask-image: linear-gradient(to bottom, $color-tertiary 80%, transparent 100%);
+
+     mask-image: linear-gradient(to bottom, $color-secondary 80%, transparent 100%);
+    @media (max-width: 768px) {
+        background-attachment: scroll; 
+    }
 }
 
 .Immersion{
     margin: 0;
     padding: 0;
-    height: 60vh;
+    min-height: 60vh;
     color: $color-texte;
-    background: url("../assets/image_webp/texture_etoile.webp"),
-    linear-gradient(
+
+        background-image: 
+        linear-gradient(
         to right,
         $color-quaternary 0%,
         $color-black 100%
-    );
-     background-blend-mode: lighten;
+        ),
+        url("../assets/image_webp/texture_etoile.webp");
+        
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+
+    background-blend-mode: lighten;
+
+    image-rendering: auto;
     
+    @media (max-width: 768px) {
+        background-attachment: scroll; 
+    }
 }
 
 .Immersion .header{
     margin: 0;
     padding: 0;
     color: $color-texte;
-    background: url("../assets/image_webp/texture_etoile.webp"),
-    linear-gradient(
+
+         background-image: 
+        linear-gradient(
         to bottom,
         $color-quaternary 0%,
         $color-black 100%
-    );
-     background-blend-mode: lighten;
-    mask-image: linear-gradient(to bottom, $color-quaternary 80%, transparent 100%);
+    ),
+         url("../assets/image_webp/texture_etoile.webp");
+        
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+
+    background-blend-mode: lighten;
+
+     mask-image: linear-gradient(to bottom, $color-secondary 80%, transparent 100%);
+    @media (max-width: 768px) {
+        background-attachment: scroll; 
+    }
 }
 
 header{
