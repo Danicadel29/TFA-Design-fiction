@@ -11,7 +11,8 @@ body{
     padding: 0;
     min-height: 100vh;
     color: $color-texte;
-    background: linear-gradient(
+    background:url("../assets/image_webp/texture_etoile.webp"),
+     linear-gradient(
         to top,
         $color-black 6%,
         $color-quaternary 12%,
@@ -19,9 +20,7 @@ body{
         $color-secondary 44%,
         $color-primary 58%,
         $color-black 67%
-    ),
-    url("../assets/image_webp/texture_etoile.webp");
-    background-blend-mode: lighten;
+    );
     
 }
 
