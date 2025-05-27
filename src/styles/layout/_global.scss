@@ -6,24 +6,35 @@ body{
     width: 100%;
 }
 
-.Home{
+.Home {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     color: $color-texte;
-    background: 
-     linear-gradient(
-        to top,
-        $color-black 6%,
-        $color-quaternary 12%,
-        $color-tertiary 26%,
-        $color-secondary 44%,
-        $color-primary 58%,
-        $color-black 67%
-    ),
-    url("../assets/image_webp/texture_etoile.webp");
+
+    background-image: 
+        linear-gradient(
+            to top,
+            $color-black 6%,
+            $color-quaternary 12%,
+            $color-tertiary 26%,
+            $color-secondary 44%,
+            $color-primary 58%,
+            $color-black 67%
+        ),
+        url("../assets/image_webp/texture_etoile.webp");
+        
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+
     background-blend-mode: lighten;
+
     
+    @media (max-width: 768px) {
+        background-attachment: scroll; 
+    }
 }
 
 .Mars{
