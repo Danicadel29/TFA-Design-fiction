@@ -4,7 +4,9 @@
      margin: 0;
      display: flex;
      justify-content: center;
+     flex-direction: row;
      padding: 0;
+     margin-bottom: 25px;
     
 }
 
@@ -48,6 +50,20 @@
     border-radius: 10%;
     padding: 5px 5px;
     
+}
+
+.texte_nav.active a{
+    border-bottom: solid 2px $color-texte;
+    
+}
+
+.texte_nav.active a:hover{
+    color: $color-texte;
+    
+}
+
+.element_footer.active{
+     border-bottom: solid 2px $color-texte;
 }
 
 .element__Nav2 a:hover{
@@ -119,4 +135,16 @@
 .Footer {
     padding-right: 40px;
     padding-left: 40px;
+    margin-bottom: 48px;
+}
+
+.invisible-tel{
+    display: none;
+       @include responsive(tablet) {
+       display: flex;
+    }
+    
+    @include responsive(desktop) {
+        display: flex;
+    }
 }
