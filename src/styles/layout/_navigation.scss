@@ -62,6 +62,11 @@
     
 }
 
+.element_footer.active a:hover{
+    color: $color-texte;
+    
+}
+
 .element_footer.active{
      border-bottom: solid 2px $color-texte;
 }

@@ -95,19 +95,43 @@ body.loaded .transition-slide {
  
 }
 
-//parametre titre description + titre voyage
-.anim-titre-voyage,
-.anim-titre-description{
+//anim titre voyage
+.anim-titre-voyage{
   animation:
     titleAppear 2s ease-out forwards, //vite, doucement/ garde dernier etat
     
 
 }
-//etat de base titre description
-.titre-description {
+
+.titre-voyage{
   opacity: 0;
-  transform: scale(0) translateY(20px);
+  
 }
+
+@keyframes titlezoom {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1); /* Zoom léger */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Retour à la taille normale */
+  }
+}
+
+
+//anim titre description
+.anim-titre-description{
+  animation:
+    titlezoom 1s ease-out forwards, //vite, doucement/ garde dernier etat
+    
+
+}
+
 
 //anim planets1
 @keyframes animPlanet1 {

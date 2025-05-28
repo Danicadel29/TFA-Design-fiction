@@ -73,8 +73,10 @@ document.querySelectorAll('.titre-description').forEach((element) => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('anim-titre-description');
-        observer.unobserve(entry.target); // une seule fois
+        //utilisation de l'ia
+         element.classList.remove('anim-titre-description');//enlever la classe pour que l'animation se relance
+        void element.offsetWidth; // forcer le restart pour relancer l'animation
+        element.classList.add('anim-titre-description');//
       }
     });
   }, { threshold: 0.5 });
@@ -82,7 +84,20 @@ document.querySelectorAll('.titre-description').forEach((element) => {
   observer.observe(element);
 });
 
+// animation titre decription quand dans le champ //utilisation de l'ia
 
+document.querySelectorAll('.titre-voyage').forEach((element) => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('anim-titre-voyage');//ajouter la classe pour que l'animation se lance
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(element);
+});
 
 // anim activité shéma
 const acti1 = document.querySelectorAll(".act1")
