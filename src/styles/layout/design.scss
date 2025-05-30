@@ -49,6 +49,13 @@
 }
 }
 
+.button_M:hover,
+.button_L:hover,
+.button_O:hover,
+.button_I:hover{
+    background-color: $color-texte;
+}
+
 .button_L {
         width: 8vw;
         height: 8vw;
