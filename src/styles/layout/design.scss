@@ -29,61 +29,162 @@
 }
 
 .button_M {
-        width: 7vw;
-        height: 7vw;
+        width: 8vw;
+        height: 8vw;
         border-radius: 100%;
         background-color: $color-primary;
         position: absolute;
+
+        @include responsive(tablet) {
+         width: 5vw;
+        height: 5vw;
+        
     }
 
-.button_M:hover,
-.button_L:hover,
-.button_O:hover,
-.button_I:hover{
-    background-color: $color-texte;
+    @include responsive(desktop) {
+        width: 5vw;
+        height: 5vw;
+        
+        
+}
 }
 
 .button_L {
-        width: 7vw;
-        height: 7vw;
+        width: 8vw;
+        height: 8vw;
         border-radius: 100%;
         background-color: $color-secondary;
         position: absolute;
+
+         @include responsive(tablet) {
+         width: 5vw;
+        height: 5vw;
+        
+    }
+
+    @include responsive(desktop) {
+        width: 5vw;
+        height: 5vw;
+        
+        
+}
     }
 
 .button_O {
-        width: 7vw;
-        height: 7vw;
+        width: 8vw;
+        height: 8vw;
         border-radius: 100%;
         background-color: $color-tertiary;
         position: absolute;
+
+        @include responsive(tablet) {
+         width: 5vw;
+        height: 5vw;
+        
+    }
+
+    @include responsive(desktop) {
+        width: 5vw;
+        height: 5vw;
+        
+        
+}
     }
 
 .button_I {
-        width: 7vw;
-        height: 7vw;
+        width: 8vw;
+        height: 8vw;
         border-radius: 100%;
         background-color: $color-quaternary;
         position: absolute;
+
+        @include responsive(tablet) {
+         width: 5vw;
+        height: 5vw;
+        
+    }
+
+    @include responsive(desktop) {
+        width: 5vw;
+        height: 5vw;
+        
+        
+}
     }
 
 .btn_acti1{
     transform: translate3d(29vw, 1vw, 0);
+
+         @include responsive(tablet) {
+        transform: translate3d(30vw, 2vw, 0);
+        
+    }
+
+    @include responsive(desktop) {
+        transform: translate3d(30vw, 2vw, 0);
+        
+        
+}
 }
 
 .btn_acti2{
-    transform: translate3d(-3vw, 11vw, 0);
+     transform: translate3d(-3vw, 11vw, 0);
+
+        @include responsive(tablet) {
+        transform: translate3d(-2vw, 11vw, 0);
+        
+    }
+
+    @include responsive(desktop) {
+        transform: translate3d(-2vw, 11vw, 0);    
+}
 }
 .btn_acti3{
     transform: translate3d(60vw, 12vw, 0);
+
+        @include responsive(tablet) {
+        transform: translate3d(61vw, 12vw, 0);
+        
+    }
+
+    @include responsive(desktop) {
+        transform: translate3d(61vw, 12vw, 0);   
+}
 }
 
 .btn_acti4{
-    transform: translate3d(29vw, 20vw, 0);
+     transform: translate3d(29vw, 20vw, 0);
+
+        @include responsive(tablet) {
+        transform: translate3d(30vw, 21vw, 0);
+        
+    }
+
+    @include responsive(desktop) {
+        transform: translate3d(30vw, 21vw, 0); 
+}
 }
 .btn_acti5{
-    transform: translate3d(12vw, 11vw, 0);
+   transform: translate3d(12vw, 11vw, 0);
+
+        @include responsive(tablet) {
+        transform: translate3d(12vw, 12vw, 0);
+        
+    }
+
+    @include responsive(desktop) {
+        transform: translate3d(12vw, 12vw, 0);
+}
 }
 .btn_acti6{
-    transform: translate3d(46vw, 11vw, 0);
+     transform: translate3d(46vw, 11vw, 0);
+
+        @include responsive(tablet) {
+        transform: translate3d(47vw, 12vw, 0);
+        
+    }
+
+    @include responsive(desktop) {
+        transform: translate3d(47vw, 12vw, 0);
+}
 }
